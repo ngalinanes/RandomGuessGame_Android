@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Adivina el numero!"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="70sp"
+        android:layout_below="@+id/title"
+        android:background="@drawable/forget"
+        android:id="@+id/guess"
+        android:textColor="#0d6e6a"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto_actual"
+        android:layout_below="@id/guess"
+        android:layout_marginTop="20sp"
+        android:singleLine="true"
+        android:text="Puntaje actual: "
+        android:layout_marginLeft="15sp"
+        android:layout_marginStart="15sp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/puntaje_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/texto_actual"
+        android:text="0"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/guess"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mejor_puntaje"
+        android:layout_below="@id/texto_actual"
+        android:layout_marginTop="20sp"
+        android:text="Mejor Puntaje: "
+        android:layout_marginLeft="15sp"
+        android:layout_marginStart="15sp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/mejor_puntaje"
+        android:id="@+id/buttonGuess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="Adivinar!"
+        android:textColor="#FFF"
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>
